@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Silkscreen&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --box-idioma: #ffffff;
+  --botao-pesquisar: #fa9401;
+  --botoes-secundarios: #444242;
+  --cor-text: #ffffff;
+  --background: #444242;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header .box-idioma {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px 12px;
+  width: 121.33px;
+  height: 34px;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--box-idioma);
+}
+
+#idioma {
+  font-size: 12px;
+}
+
+.icone-header-menu {
+  width: 24px;
+  height: 4px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.icone-header-menu img {
+  margin: 2px;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-container {
+  width: 265px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-container .img-logo {
+  width: 240.52px;
+  height: 75px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-top: 50px;
+  border-radius: 50px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.buttons button {
+  background-color: var(--botoes-secundarios);
+  border: none;
+  width: 16rem;
+  height: 3.125rem;
+  border-radius: 3.125rem;
+  padding: 12px;
+  margin: 5px;
+  color: var(--cor-text);
+  border: 2px solid #fa9401;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.buttons button:hover {
+  background-color: var(--botao-pesquisar);
+  border: 1px solid #fa9401;
+}
+
+.buttons #icone-searchbox {
+  width: 1rem;
+}
+
+.button-pesquisar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-pesquisar:before {
+  content: url('../img/icone-searchbox.png');
+  margin-right: 11px;
+}
+
+.button-lancamentos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-lancamentos:before {
+  content: url('../img/icone-flag-lancamento.png');
+  margin-right: 11px;
+}
+
+.button-carrinho {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-carrinho:before {
+  content: url('../img/carrinho.png');
+  margin-right: 8px;
+}
+
+.button-contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.button-contato:before {
+  content: url('../img/contato.png');
+  margin-right: 10px;
+}
+
+footer {
+  align-self: center;
+  margin-bottom: 1.4rem;
+  width: 100%;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icons a {
+  display: block;
+}
+
+.icons :not(:last-child) {
+  margin-right: 1rem;
+}
+
+.popup {
+  background: white;
+  position: relative;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 4rem;
+  animation: animate;
+  animation-duration: 800ms;
+}
+
+@keyframes animate {
+  from{opacity: 1;}
+  from{opacity: 0;}
+
+}
+
+.popup ul {
+  list-style: none;
+}
+
+.popup span {
+  position: absolute;
+  top: 0;
+  right: 3rem;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+  .buttons {
+    width: 546px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .buttons button {
+    width: 16rem;
+  }
+
+  .icons {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .buttons {
+    width: 546;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-logo {
+    margin-top: 78px;
+  }
+}
+
+@media (max-width: 360px) and (orientation: portrait) {
+  .img-logo {
+    margin-top: 78px;
+  }
+
+  .icons {
+    margin-top: 81px;
+  }
+}
+
+@media (max-width: 320px) and (orientation: portrait) {
+  .img-logo {
+    margin-top: 42px;
+  }
+
+  .container {
+    background-color: #FFB64E;
+  }
+
+  .buttons button {
+    border-color: #ffffff;
+    transition: 0.5s ease;
+  }
+
+  .buttons button:hover {
+    border: 2px solid #444242;
+  }
+
+  .icons {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./fontawesome/css/all.css" />
+    <title>App Mobile</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="box-container">
+          <button onclick="acao()" class="box-idioma">
+            <label for="idiomas" id="idioma">Idioma:</label>
+            <img src="./img/brasil.png" alt="Bandeira do Brasil" />
+            <img src="./img/Vector.png" alt="Setinha" />
+          </button>
+          <div class="icone-header-menu">
+            <img src="./img/Rectangle 400.png" alt="Rectangle" />
+            <img src="./img/Rectangle 400.png" alt="Rectangle" />
+            <img src="./img/Rectangle 400.png" alt="Rectangle" />
+          </div>
+        </div>
+
+        <div class="popup">
+          <span onclick="fechar()" class="fechar">X</span>
+
+          <h3>Idioma | Language</h3>
+
+          <ul>
+            <li data-language="portugues">Português</li>
+            <li data-language="espanhol">Espanhol</li>
+            <li data-language="english">English</li>
+          </ul>
+        </div>
+      </header>
+
+      <main>
+        <section>
+          <div class="section-container">
+            <div class="img-logo">
+              <img src="./img/Logo.png" alt="logo-ideia-2001" />
+            </div>
+            <div class="buttons">
+              <button class="button-pesquisar">Pesquisar produtos</button>
+              <button class="button-lancamentos">Lançamentos</button>
+              <button class="button-carrinho">Carrinho</button>
+             <button><a class="button-contato" href="/contato.html">Contato</button></a>
+            </div>
+          </div>
+          
+        </section>
+      </main>
+
+      <footer>
+        <div class="icons">
+          <a target="_blank" href="https://ideia2001.com.br"><img src="./img/icoSite.png" alt="Icone do site" /></a>
+          <a target="_blank" href="https://facebook.com/ideia2001"><img src="./img/icoFacebook.png" alt="Facebook" /></a>
+          <a target="_blank" href="https://instagram.com/ideia2001"><img src="./img/icoInstagram.png" alt="Intagram" /></a>
+        </div>
+      </footer>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

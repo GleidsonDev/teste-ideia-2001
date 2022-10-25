@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Silkscreen&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --background-header: #444242;
+  --cor-subheader: #f2f2f2;
+  --cor-primaria: #fa9401;
+}
+
+body {
+  overflow: hidden;
+}
+
+header {
+  background-color: var(--background-header);
+  display: flex;
+  width: 100%;
+  height: 64px;
+}
+
+#icon-voltar {
+  width: 20px;
+  height: 16px;
+}
+
+#logo-header {
+  width: 122px;
+  height: 38px;
+  margin-left: 30px;
+}
+
+.carrinho{
+  position: relative;
+}
+
+.header-botoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 16px;
+  height: 16px;
+  background-color: #fa9401;
+  border-radius: 50%;
+  color: #fff;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+ 
+  position: absolute;
+  top: 0;
+}
+
+.icone-header-menu {
+  margin-left: 29px;
+}
+
+.box-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.subheader {
+  width: 100%;
+  height: 50px;
+  background-color: var(--cor-subheader);
+}
+
+section {
+  padding: 0 16px;
+}
+
+span {
+  color: var(--cor-primaria);
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 15.5px;
+}
+
+.localizacao, .contato-telefone, .contato-site, .contato-email {
+  color: #5B5A5A;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.localizacao:before {
+  content: url('../img/icone-localizacao.png');
+  margin-right: 17px;
+}
+
+.border {
+  width: 100%;
+  border-bottom: 2px solid #E8E8E8;
+}
+
+.contato-telefone:before {
+  content: url('../img/icone-contato-telefone.png');
+  margin-right: 16px;
+}
+
+.contato-site:before {
+  content: url('../img/icone-contato-site.png');
+  margin-right: 16px;
+}
+
+.contato-email:before {
+  content: url('../img/icone-contato-email.png');
+  margin-right: 16px;
+}
+
+.icones-redes-sociais {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 46px;
+}
+
+.footer {
+  background-color: var(--cor-primaria);
+  width: 100%;
+  height: 50px;
+  margin-top: 157px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.15);;
+}
+
+#fale-conosco {
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 700;
+}
